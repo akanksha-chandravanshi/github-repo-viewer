@@ -3,9 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
+    <title>GitHub Repositories Viewer</title>
+    <link rel="stylesheet" href="github.css">
+    <script src="github.js">
+        
+    </script>
 </head>
 <body>
-    
+    <header>
+        <h1>GitHub Repositories Viewer</h1>
+    </header>
+    <main>
+        <label for="username">Enter GitHub username: </label>
+        <input type="text" id="username" />
+        <button onclick="getRepos()">Get Repositories</button>
+
+        <ul id="repoList"></ul>
+    </main>
 </body>
 </html>
